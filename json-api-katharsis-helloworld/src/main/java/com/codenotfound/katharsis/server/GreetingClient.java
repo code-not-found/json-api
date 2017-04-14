@@ -17,12 +17,12 @@ public class GreetingClient {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(GreetingClient.class);
 
-  private KatharsisClient katharsisClient;
+  private KatharsisClient katharsisClient =
+      new KatharsisClient("http://localhost:9090/codenotfound/api");
   private ResourceRepositoryV2<Greeting, Long> resourceRepositoryV2;
 
   @PostConstruct
   public void init() {
-    katharsisClient = new KatharsisClient("http://localhost:9090/codenotfound/api");
     resourceRepositoryV2 = katharsisClient.getRepositoryForType(Greeting.class);
   }
 

@@ -20,7 +20,7 @@ public class GreetingController {
   private ResourceRegistry resourceRegistry;
 
   @RequestMapping("/resources-info")
-  public Map<?, ?> getResources() {
+  public Map<String, String> getResources() {
     Map<String, String> result = new HashMap<>();
     // Add all resources
     for (RegistryEntry entry : resourceRegistry.getResources()) {

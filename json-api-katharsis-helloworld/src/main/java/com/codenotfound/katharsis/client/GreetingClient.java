@@ -1,4 +1,4 @@
-package com.codenotfound.katharsis.server;
+package com.codenotfound.katharsis.client;
 
 import javax.annotation.PostConstruct;
 

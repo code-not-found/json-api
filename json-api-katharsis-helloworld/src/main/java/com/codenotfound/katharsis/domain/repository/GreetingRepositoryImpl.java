@@ -18,13 +18,8 @@ public class GreetingRepositoryImpl extends ResourceRepositoryBase<Greeting, Lon
 
   public GreetingRepositoryImpl() {
     super(Greeting.class);
-    save(new Greeting(123L, "Hello World!"));
-  }
 
-  @Override
-  public synchronized <S extends Greeting> S save(S greeting) {
-    greetings.put(greeting.getId(), greeting);
-    return greeting;
+    greetings.put(1L, new Greeting(1L, "Hello World!"));
   }
 
   @Override

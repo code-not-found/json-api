@@ -20,6 +20,6 @@ public class SpringKatharsisApplicationTest {
 
   @Test
   public void testFindOne() {
-    assertThat(greetingClient.findOne(123L).getContent()).isEqualTo("Hello World!");
+    assertThat(greetingClient.findOne(1L).getContent()).isEqualTo("Hello World!");
   }
 }

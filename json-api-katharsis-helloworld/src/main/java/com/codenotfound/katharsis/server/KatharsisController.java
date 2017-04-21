@@ -14,7 +14,7 @@ import io.katharsis.spring.boot.v3.KatharsisConfigV3;
 
 @RestController
 @Import({KatharsisConfigV3.class})
-public class GreetingController {
+public class KatharsisController {
 
   @Autowired
   private ResourceRegistry resourceRegistry;
@@ -27,6 +27,7 @@ public class GreetingController {
       result.put(entry.getResourceInformation().getResourceType(),
           resourceRegistry.getResourceUrl(entry.getResourceInformation()));
     }
+
     return result;
   }
 }

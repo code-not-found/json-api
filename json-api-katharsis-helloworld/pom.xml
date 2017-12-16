@@ -8,7 +8,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>json-api-katharsis-helloworld</name>
-  <description>JSON API - Katharsis Spring Boot Hello World Example</description>
+  <description>JSON API - Spring Boot Katharsis Example</description>
   <url>https://www.codenotfound.com/2017/04/json-api-katharsis-spring-boot-example.html</url>
 
   <parent>

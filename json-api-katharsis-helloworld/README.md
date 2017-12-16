@@ -4,4 +4,4 @@
 
 A detailed step-by-step tutorial on how to implement a JSON API resource using Katharsis and Spring Boot.
 
-[https://www.codenotfound.com/2017/04/json-api-spring-boot-katharsis-example.html](https://www.codenotfound.com/2017/04/json-api-spring-boot-katharsis-example.html)
+[https://www.codenotfound.com/json-api-spring-boot-katharsis-example.html](https://www.codenotfound.com/json-api-spring-boot-katharsis-example.html)

@@ -12,6 +12,7 @@ addons:
       secure: $SONAR_TOKEN
 
 env:
+- PROJECT_DIR=json-api-crnk-helloworld
 - PROJECT_DIR=json-api-katharsis-helloworld
 
 script:

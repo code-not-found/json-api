@@ -35,4 +35,9 @@ public class Greeting {
   public void setContent(String content) {
     this.content = content;
   }
+
+  @Override
+  public String toString() {
+    return "greeting[id=" + id + ", content=" + content + "]";
+  }
 }

@@ -1,8 +1,0 @@
-katharsis:
-  resourcePackage: com.codenotfound.katharsis.domain
-  domainName: http://localhost:9090/codenotfound
-  pathPrefix: /api
-
-server:
-  context-path: /codenotfound
-  port: 9090

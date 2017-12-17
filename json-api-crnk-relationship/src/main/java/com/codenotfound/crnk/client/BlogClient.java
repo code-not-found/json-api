@@ -18,15 +18,15 @@ public class BlogClient {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(BlogClient.class);
 
-  private CrnkClient crnkClientClient = new CrnkClient("http://localhost:9090/codenotfound/api");
+  private CrnkClient crnkClient = new CrnkClient("http://localhost:9090/codenotfound/api");
 
   private ResourceRepositoryV2<Article, Long> articleResourceRepositoryV2;
   private ResourceRepositoryV2<Person, Long> personResourceRepositoryV2;
 
   @PostConstruct
   public void init() {
-    articleResourceRepositoryV2 = crnkClientClient.getRepositoryForType(Article.class);
-    personResourceRepositoryV2 = crnkClientClient.getRepositoryForType(Person.class);
+    articleResourceRepositoryV2 = crnkClient.getRepositoryForType(Article.class);
+    personResourceRepositoryV2 = crnkClient.getRepositoryForType(Person.class);
   }
 
   public Article findOneArticle(long id) {

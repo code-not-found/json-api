@@ -13,6 +13,8 @@ addons:
 
 env:
 - PROJECT_DIR=json-api-crnk-helloworld
+- PROJECT_DIR=json-api-crnk-jpa
+- PROJECT_DIR=json-api-crnk-relationship
 - PROJECT_DIR=json-api-katharsis-helloworld
 
 script:

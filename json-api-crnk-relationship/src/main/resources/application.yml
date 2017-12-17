@@ -1,0 +1,8 @@
+crnk:
+  resourcePackage: com.codenotfound.crnk.domain
+  domainName: http://localhost:9090/codenotfound
+  pathPrefix: /api
+
+server:
+  context-path: /codenotfound
+  port: 9090

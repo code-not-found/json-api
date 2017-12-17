@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.codenotfound</groupId>
+  <artifactId>json-api-crnk-relationship</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>json-api-crnk-relationship</name>
+  <description>JSON API - Crnk Relationship Example</description>
+  <url>https://www.codenotfound.com/json-api-crnk-relationship-example.html</url>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.9.RELEASE</version>
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <crnk.version>2.4.20171211095351</crnk.version>
+    <okhttp.version>3.9.1</okhttp.version>
+  </properties>
+
+  <dependencies>
+    <!-- spring-boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- crnk -->
+    <dependency>
+      <groupId>io.crnk</groupId>
+      <artifactId>crnk-core</artifactId>
+      <version>${crnk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.crnk</groupId>
+      <artifactId>crnk-spring</artifactId>
+      <version>${crnk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.crnk</groupId>
+      <artifactId>crnk-client</artifactId>
+      <version>${crnk.version}</version>
+    </dependency>
+    <!-- okhttp -->
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>${okhttp.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- spring-boot-maven-plugin -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

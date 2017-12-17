@@ -1,7 +1,7 @@
 package com.codenotfound.crnk.domain.repository;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.stereotype.Component;
 
@@ -15,7 +15,7 @@ import io.crnk.core.resource.list.ResourceList;
 public class ArticleRepositoryImpl extends ResourceRepositoryBase<Article, Long>
     implements ArticleRepository {
 
-  private Map<Long, Article> articles = new HashMap<>();
+  private Map<Long, Article> articles = new ConcurrentHashMap<>();
 
   public ArticleRepositoryImpl() {
     super(Article.class);
